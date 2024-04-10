@@ -13,7 +13,6 @@ public class Test {
 		double lat = sc.nextDouble();
 		
 		OpenMeteoClient.cliente(lon, lat);
-		
 	}
 
 }
