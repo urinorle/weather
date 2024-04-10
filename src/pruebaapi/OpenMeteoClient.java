@@ -9,11 +9,11 @@ import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 
 public class OpenMeteoClient {
-    public static void main(String[] args) {
+    public static void cliente (double lon, double lat)  {
         try {
             // Coordenadas de la ubicación que deseas consultar
-            double latitude = 41.54329;
-            double longitude = 2.10942;
+            double latitude = lat;
+            double longitude = lon;
 
             // URL de la API de OpenMeteo
             URL url = new URL("https://api.open-meteo.com/v1/forecast?latitude=" + latitude + "&longitude=" + longitude + "&current_weather=true");
